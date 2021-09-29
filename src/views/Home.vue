@@ -1,15 +1,18 @@
 <template>
   <header
     id="home"
-    class="cover-image"
+    class="cover-image cover nested-img vh-100 bg-center center"
   >
     <NavBar />
-    <div>
+    <div class="pt8 ma3 center measure-wide">
       <img
-        :src="headerLogo"
+        src="../assets/vector/bytie-gradient.svg"
         alt="BYTIE illustration logo"
+        class="img "
       >
-      <h1>ILLUSTRATIONS</h1>
+      <h1 class="near-white center tc tracked-wide ttu f3 ph4">
+        Illustrations
+      </h1>
     </div>
     <!--    <HelloWorld />-->
   </header>
@@ -31,8 +34,9 @@ export default {
   },
   data () {
     return {
-      headerImage: '@/assets/img/header.jpg',
-      headerLogo: '@/assets/img/vector/bytie-gradient.svg'
+      headerImage: '../assets/img/header.jpg',
+      headerLogo: '../assets/img/vector/bytie-gradient.svg'
+      // why don't these display?
     }
   }
 }
@@ -40,6 +44,12 @@ export default {
 
 <style scoped>
 .cover-image{
-  :background-image: headerImage;
+  background-image: url('../assets/header.jpg');
+}
+.tracked-wide{
+  letter-spacing: 1.05em;
+}
+.pt8{
+  padding-top: 15%;
 }
 </style>
