@@ -1,11 +1,13 @@
 <template>
   <nav class="dt bg-near-black w-100 h1 h2-ns border-box pa3 ph 5-ns">
-    <a
-      v-for="link in links"
-      :key="link.key"
+    <router-link
+      v-for="(link, index) in links"
+      :key="index"
+      :to="link.href"
       class="link bytie-pink hover-washed-red f6 f5-ns dib mh2 mh4-ns ttu tracked-s tracked-tight-m tracked-l"
-      :href="link.id"
-    >{{ link.name }}</a>
+    >
+      {{ link.name }}
+    </router-link>
   </nav>
 </template>
 
@@ -17,22 +19,22 @@ export default {
       links: [{
         name: 'Home',
         key: 0,
-        id: '#home'
+        href: '#home'
       },
       {
-        name: 'About Me',
+        name: 'About',
         key: 1,
-        id: '#aboutme'
+        href: '/about'
       },
       {
-        name: 'My Work',
+        name: 'Folio',
         key: 2,
-        id: '#mywork'
+        href: '#folio'
       },
       {
         name: 'Contact',
         key: 3,
-        id: '#contact'
+        href: '#contact'
       }]
     }
   }

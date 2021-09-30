@@ -1,5 +1,17 @@
 /** styling goes here **/
-
+#app {
+    font-family: Corbel, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background-color: #1a1414;
+}
 .bytie-pink {
     color: #ff6d85;
+}
+.bytie-light-pink {
+    color: #f1bfbf;
+}
+.tracked-wide {
+    letter-spacing: 1.05em;
 }
