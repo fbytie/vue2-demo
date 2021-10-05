@@ -30,12 +30,11 @@ export default {
   name: 'Home',
   components: {
     NavBar
-    /* HelloWorld */ /* , SomeOtherComponent */
   },
   data () {
     return {
-      headerImage: '../assets/img/header.jpg',
-      headerLogo: '../assets/img/vector/bytie-gradient.svg'
+      headerImage: '../assets/header.jpg',
+      headerLogo: '../assets/vector/bytie-gradient.svg'
     }
   }
 }

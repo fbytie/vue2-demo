@@ -1,12 +1,15 @@
 <template>
-  <div class="db center min-vh-100">
+  <div class="db center white">
     <a
       v-for="(link, index) in links"
       :key="index"
       :href="link.href"
-      class="link bytie-light-pink hover-near-white f6 f5-ns dib mh2 mh4-ns"
     >
-      {{ link.name }}
+      <FeatherIcon
+        :icon="link.name"
+        :size="24"
+      />
+      <!-- {{ link.name }} -->
       <!--
       <font-awesome
         :icon="link.icon"
@@ -20,24 +23,29 @@
 <script>
 /* import { faCamera, faKiwiBird, faPaintBrush } from '@fortawesome/free-solid-svg-icons' */
 
+import FeatherIcon from './FeatherIcon'
+
 export default {
   name: 'SocialBar',
+  components: {
+    FeatherIcon
+  },
   data () {
     return {
       links: [{
-        name: 'DeviantArt',
+        name: 'gift',
         key: 0,
-        href: 'https://www.deviantart.com/fbytie'
+        href: 'https://www.patreon.com/bytie'
         /* icon: faPaintBrush */
       },
       {
-        name: 'Twitter',
+        name: 'twitter',
         key: 1,
         href: 'https://twitter.com/fBytie'
         /* icon: faKiwiBird */
       },
       {
-        name: 'Instagram',
+        name: 'instagram',
         key: 2,
         href: 'https://www.instagram.com/fbytie/'
         /* icon: faCamera */

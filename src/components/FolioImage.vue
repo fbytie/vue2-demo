@@ -1,10 +1,12 @@
 <template>
-  <div class="dib center">
+  <div>
+    <!--    <img
+      src="../assets/logo.png"
+    >-->
     <img
-      v-for="(image, index) in images"
-      :key="index"
-      :src="image.path"
-      :alt="image.altText"
+      :src="src"
+      :alt="alt"
+      class="dib"
     >
   </div>
 </template>
@@ -12,12 +14,18 @@
 <script>
 export default {
   name: 'FolioImage',
+  props: {
+    src: {
+      type: String,
+      default: '../assets/logo.png'
+    },
+    alt: {
+      type: String,
+      default: 'no image'
+    }
+  },
   data () {
     return {
-      images: [{
-        path: '../assets/logo.png',
-        altText: 'logo'
-      }]
     }
   }
 }
