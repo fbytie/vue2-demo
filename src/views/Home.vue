@@ -1,16 +1,16 @@
 <template>
   <header
-    id="home"
-    class="cover-image cover nested-img vh-100 bg-center center"
+    id="home-cover-image"
+    class="cover nested-img vh-100 bg-center center"
   >
     <NavBar />
-    <div class="pt8 ma3 center measure-wide">
+    <div class="logo-vertically-centered ma3 center measure-wide">
       <img
         src="../assets/vector/bytie-gradient.svg"
         alt="BYTIE illustration logo"
-        class="img "
+        class="img"
       >
-      <h1 class="near-white center tc tracked-wide ttu f3 ph4">
+      <h1 class="washed-yellow center tc tracked-wide ttu f3 ph4">
         Illustrations
       </h1>
     </div>
@@ -21,7 +21,7 @@
 <script>
 // @ is an alias to /src
 /* import HelloWorld from '@/components/HelloWorld.vue' */
-import NavBar from '../components/NavBar'
+import NavBar from '@/components/NavBar'
 /*
 import SomeOtherComponent from '@/components/SomeOtherComponent.vue'
 */
@@ -36,20 +36,16 @@ export default {
     return {
       headerImage: '../assets/img/header.jpg',
       headerLogo: '../assets/img/vector/bytie-gradient.svg'
-      // why don't these display?
     }
   }
 }
 </script>
 
 <style scoped>
-.cover-image{
+#home-cover-image{
   background-image: url('../assets/header.jpg');
 }
-.tracked-wide{
-  letter-spacing: 1.05em;
-}
-.pt8{
-  padding-top: 15%;
+.logo-vertically-centered{
+  padding-top: 30vh;
 }
 </style>
