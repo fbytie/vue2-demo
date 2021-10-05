@@ -19,7 +19,7 @@ export default {
       links: [{
         name: 'Home',
         key: 0,
-        href: '#home'
+        href: '/'
       },
       {
         name: 'About',
@@ -29,12 +29,12 @@ export default {
       {
         name: 'Folio',
         key: 2,
-        href: '#folio'
+        href: '/folio'
       },
       {
         name: 'Contact',
         key: 3,
-        href: '#contact'
+        href: '/contact'
       }]
     }
   }
