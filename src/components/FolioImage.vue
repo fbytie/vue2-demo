@@ -1,13 +1,16 @@
 <template>
   <div>
-    <!--    <img
+    <div>
+      <!--    <img
       src="../assets/logo.png"
     >-->
-    <img
-      :src="src"
-      :alt="alt"
-      class="dib"
-    >
+      <img
+        :src="src"
+        :alt="alt"
+        class="dib o-50 glow"
+        @click="sendModalImage"
+      >
+    </div>
   </div>
 </template>
 
@@ -26,6 +29,12 @@ export default {
   },
   data () {
     return {
+      showModal: false
+    }
+  },
+  methods: {
+    sendModalImage () {
+      this.$emit('open-modal-image', this.src, this.alt)
     }
   }
 }

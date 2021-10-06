@@ -4,15 +4,15 @@
     class="cover nested-img vh-100 bg-center center"
   >
     <NavBar />
-    <div class="logo-vertically-centered ma3 center measure-wide">
+    <div class="logo-vertically-centered ma3 center w-50 measure-wide-ns">
       <img
         src="../assets/vector/bytie-gradient.svg"
         alt="BYTIE illustration logo"
         class="img"
       >
-      <h1 class="washed-yellow center tc tracked-wide ttu f3 ph4">
+      <p class="washed-yellow center tc tracked-wide ttu f7 f3-l mh4">
         Illustrations
-      </h1>
+      </p>
     </div>
     <!--    <HelloWorld />-->
   </header>
@@ -45,6 +45,6 @@ export default {
   background-image: url('../assets/header.jpg');
 }
 .logo-vertically-centered{
-  padding-top: 30vh;
+  margin-top: 35vh;
 }
 </style>
