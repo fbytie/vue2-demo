@@ -6,8 +6,11 @@
     text-align: center;
     background-color: #1a1414;
 }
+.text-block{
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
 .bytie-pink {
-    color: #ff6d85;
+    color: #ff8d95;
 }
 .bytie-light-pink {
     color: #f1bfbf;

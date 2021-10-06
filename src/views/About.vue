@@ -1,32 +1,32 @@
 <template>
-  <div>
+  <div class="min-vh-100">
     <NavBar />
-    <div class="db flex pa4">
-      <!--about me-->
-      <article
-        id="about"
-        class="bg-black-50 mw9 center ma4 tc flex"
-      >
-        <div class="mw7 dib">
-          <img
-            src="../assets/aboutMe.png"
-          >
-        </div>
 
-        <div class="mw6 ma6 dib bytie-light-pink text-block lh-copy">
-          <h2 class="washed-yellow tracked">
-            About Me
-          </h2>
-          <p>
+    <!--about me-->
+    <article
+      id="about"
+      class="mv4 cf bg-black-50 w-75 center tc"
+    >
+      <div class="fl w-100 w-50-ns flex">
+        <img
+          id="about-me-image"
+          src="../assets/aboutMe.png"
+        >
+      </div>
+      <h2 class="washed-yellow pa5 tracked dib center">
+        About Me
+      </h2>
+      <div class="w-100 w-50-ns pa5 bytie-light-pink text-block lh-copy flex">
+        <p class="db">
+          <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Augue lacus viverra vitae congue eu. Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque.
-          </p>
-          <p>Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque.  </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Augue lacus viverra vitae congue eu. Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque.
-          </p>
-        </div>
-      </article>
-    </div>
+          </span>
+          <br> <br>
+          Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque.
+        </p>
+      </div>
+    </article>
+    <div class="w-100 h2" />
   </div>
 </template>
 
@@ -37,7 +37,6 @@ export default {
   name: 'About',
   components: {
     NavBar
-    /* HelloWorld */ /* , SomeOtherComponent */
   },
   data () {
     return {
@@ -47,9 +46,9 @@ export default {
 </script>
 
 <style scoped>
-
-.text-block{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#about-me-image {
+  max-height: 100%;
+  width: auto;
 }
 
 </style>
