@@ -1,7 +1,5 @@
 <template>
-  <div class="min-vh-100">
-    <NavBar />
-
+  <div>
     <!--about me-->
     <article
       id="about"
@@ -31,12 +29,10 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
 
 export default {
   name: 'About',
   components: {
-    NavBar
   },
   data () {
     return {

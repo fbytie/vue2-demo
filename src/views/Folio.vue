@@ -1,6 +1,5 @@
 <template>
-  <div class="min-vh-100">
-    <NavBar />
+  <div>
     <div class="w-100 center">
       <h2 class="washed-yellow tracked">
         Folio
@@ -23,7 +22,6 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
 import SocialBar from '../components/SocialBar'
 import FolioImage from '../components/FolioImage'
 
@@ -31,8 +29,7 @@ export default {
   name: 'Folio',
   components: {
     FolioImage,
-    SocialBar,
-    NavBar
+    SocialBar
   },
   data () {
     return {
