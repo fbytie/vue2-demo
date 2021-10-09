@@ -2,12 +2,15 @@
   <transition name="modal">
     <div
       class="modal-mask fixed top-0 left-0 w-100 h-100 dt bg-black-70"
-      @click="$emit('close')"
+      @click="$emit('close', $event)"
     >
       <div
         class="dtc v-mid"
       >
-        <div class="modal-container w-80 w-40-ns pa1 bg-black br3 shadow-2 helvetica center">
+        <div
+          class="modal-container w-80 w-40-l pa1 bg-black br3 shadow-2 helvetica center"
+          @click="(event) => event.stopPropagation()"
+        >
           <div class="modal-header mt0">
             <slot
               name="header"
@@ -71,7 +74,7 @@ export default {
 
 <style scoped>
 #modalImg {
-  max-height: 100vh;
+  max-height: 90vh;
 }
 .modal-mask {
   z-index: 9998;
