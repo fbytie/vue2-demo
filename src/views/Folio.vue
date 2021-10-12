@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <div class="w-100 center">
-      <h2 class="washed-yellow tracked">
+  <div class="mv4">
+    <div>
+      <h2 class="tracked">
         Folio
       </h2>
       <SocialBar />
-      <div class="folio-gallery flex flex-wrap items-end">
+      <div class="flex flex-wrap items-end">
         <div
           v-for="(image, index) in images"
           :key="index"
@@ -49,23 +49,12 @@ export default {
         {
           alt: 'alt',
           path: 'http://bytie.eu/img/1.jpg'
-        },
-        {
-          alt: 'alt',
-          path: 'http://bytie.eu/img/1.jpg'
         }
-      ],
-      showModal: false,
-      modalImageParameters: {
-        path: '',
-        caption: ''
-      }
+      ]
     }
   }
 }
 </script>
 
 <style scoped>
-.folio-gallery {
-}
 </style>

@@ -4,7 +4,7 @@
     class="min-vh-100"
   >
     <NavBar />
-    <router-view />
+    <router-view class="min-vh-100 center w-100 washed-yellow lh-copy" />
     <Footer />
   </div>
 </template>

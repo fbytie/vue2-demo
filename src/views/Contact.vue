@@ -1,22 +1,18 @@
 <template>
-  <div class="min-vh-100 white">
+  <div>
     <div>
       <!--about me-->
       <div
         id="contact"
-        class="mv4 w-80 w-50-ns center content-center"
+        class="mv4 w-80 w-50-ns center content-center bytie-light-pink"
       >
-        <h2 class="washed-yellow pv4 tracked lh-copy">
+        <h2 class="tracked washed-yellow">
           Contact
         </h2>
-        <div class="text-block db w-100 pv4 bytie-light-pink flex fl-ns cb db ma0">
-          <p class="db">
-            <br> <br>
-            Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque.
-          </p>
+        <div class="text-block w-100 pv4">
+          {{ contactText }}
         </div>
-        <SocialBar />
-        <div class="text-block w-100 h-100 pa4 bytie-light-pink bg-black-80 db fl cb br3">
+        <div class="text-block w-100 h-100 pa4 bg-black-80 fl cb br3">
           <div>
             <form>
               <div
@@ -56,9 +52,7 @@
               <div
                 class="tl mv3"
               >
-                <label
-                  for="Message"
-                >Message</label>
+                <label>Message</label>
                 <div class="ba b--dark-gray">
                   <textarea
                     id="Message"
@@ -77,6 +71,7 @@
             </form>
           </div>
         </div>
+        <SocialBar />
       </div>
       <div class="w-100 h2" />
     </div>
@@ -85,13 +80,21 @@
 </template>
 
 <script>
+
 import SocialBar from '../components/SocialBar'
+
 export default {
   name: 'Contact',
   components: {
     SocialBar
+  },
+  data () {
+    return {
+      contactText: 'Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque.'
+    }
   }
 }
+
 </script>
 
 <style scoped>
