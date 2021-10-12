@@ -1,24 +1,22 @@
 <template>
-  <div class="white">
+  <div class="min-vh-100 white">
     <div>
       <!--about me-->
       <div
         id="contact"
-        class="mv4 cf w-75 center tc"
+        class="mv4 w-80 w-50-ns center content-center"
       >
-        <h2 class="washed-yellow pa5 tracked center lh-copy">
+        <h2 class="washed-yellow pv4 tracked lh-copy">
           Contact
         </h2>
-        <div class="text-block w-50-ns pa5 bytie-light-pink flex fl-ns db dib-ns">
+        <div class="text-block db w-100 pv4 bytie-light-pink flex fl-ns cb db ma0">
           <p class="db">
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Augue lacus viverra vitae congue eu. Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque.
-            </span>
             <br> <br>
             Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque.
           </p>
         </div>
-        <div class="text-block w-50-ns h-100 pa4 bytie-light-pink bg-black-80 db dib-ns fl br3">
+        <SocialBar />
+        <div class="text-block w-100 h-100 pa4 bytie-light-pink bg-black-80 db fl cb br3">
           <div>
             <form>
               <div
@@ -68,10 +66,10 @@
                   />
                 </div>
               </div>
-              <div class="tc">
+              <div class="flex flex-wrap self-stretch w-100 mv1 bg-dark-red tc pa2">
                 <button
                   type="submit"
-                  class="flex flex-wrap self-stretch w-100 mv1 bg-red near-white tc"
+                  class="bn w-100 bg-transparent near-white"
                 >
                   Send
                 </button>
@@ -87,9 +85,11 @@
 </template>
 
 <script>
+import SocialBar from '../components/SocialBar'
 export default {
   name: 'Contact',
   components: {
+    SocialBar
   }
 }
 </script>
