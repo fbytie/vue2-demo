@@ -1,5 +1,5 @@
 <template>
-  <div class="db center white">
+  <div :class="'db center white ' + $attrs['class']">
     <a
       v-for="(link, index) in links"
       :key="index"
