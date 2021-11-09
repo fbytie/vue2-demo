@@ -32,8 +32,13 @@ export default {
         href: '/folio'
       },
       {
-        name: 'Contact',
+        name: 'Buy',
         key: 3,
+        href: '/buy'
+      },
+      {
+        name: 'Contact',
+        key: 4,
         href: '/contact'
       }]
     }

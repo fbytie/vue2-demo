@@ -1,7 +1,7 @@
 <template>
   <div
     id="app"
-    class="min-vh-100"
+    class="vh-100"
   >
     <NavBar />
     <router-view class="min-vh-100 center w-100 washed-yellow lh-copy" />
