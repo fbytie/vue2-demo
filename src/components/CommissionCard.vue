@@ -1,8 +1,14 @@
 <template>
-  <div class="card">
+  <div class="card flex-wrap">
     <h3 class="washed-yellow">
-      {{ commissionData.type }}
+      {{ commissionType.title }}
     </h3>
+    <div class="price cb">
+      Base Price: {{ commissionType.cost }}
+    </div>
+    <div class="estimated-delivery-time">
+      Estimated Time of Delivery: {{ commissionType.edt }}
+    </div>
   </div>
 </template>
 
@@ -10,7 +16,7 @@
 export default {
   name: 'CommissionCard',
   props: {
-    commissionData: {
+    commissionType: {
       type: Object,
       required: true
     }

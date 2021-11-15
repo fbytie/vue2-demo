@@ -1,10 +1,10 @@
 <template>
   <div
     id="app"
-    class="vh-100"
+    class="min-vh-100"
   >
     <NavBar />
-    <router-view class="min-vh-100 center w-100 washed-yellow lh-copy" />
+    <router-view class="vh-100 w-100 center washed-yellow lh-copy" />
     <Footer />
   </div>
 </template>

@@ -8,6 +8,16 @@
     >
       {{ link.name }}
     </router-link>
+    <router-link
+      :to="{ name: 'user', params: { username: 'user1' } }"
+    >
+      User1
+    </router-link>
+    <router-link
+      :to="{ name: 'event-list', params: { id: '1' } }"
+    >
+      User1
+    </router-link>
   </nav>
 </template>
 
