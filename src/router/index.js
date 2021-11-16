@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import User from '../views/User.vue'
-import EventList from '../components/EventList'
-import EventCreate from '../components/EventCreate'
-import EventShow from '../components/EventShow'
-import CommissionCardSamples from '../components/CommissionCardSamples'
+
+// eslint-disable-next-line no-undef
+/* TODO: Vue.component('FeatherIcon', FeatherIcon) < this doesn't work */
 
 Vue.use(VueRouter)
 
@@ -56,29 +54,29 @@ const routes = [
   {
     path: '/user/:username',
     name: 'user',
-    component: User,
+    component: () => import(/* webpackChunkName: "commissionCard" */ '../views/User.vue'),
     props: true
   },
   {
     path: '/',
     name: 'event-list',
-    component: EventList
+    component: () => import(/* webpackChunkName: "commissionCard" */ '../components/EventList.vue')
   },
   { // Notice this has to come before /event/:id
     path: '/event/create',
     name: 'event-create',
-    component: EventCreate
+    component: () => import(/* webpackChunkName: "commissionCard" */ '../components/EventCreate.vue')
   },
   {
     path: '/event/:id',
     name: 'event-show',
-    component: EventShow,
+    component: () => import(/* webpackChunkName: "commissionCard" */ '../components/EventShow.vue'),
     props: true
   },
   {
-    path: '/card/:type',
+    path: '/commission/:type',
     name: 'commission-card-samples',
-    component: CommissionCardSamples,
+    component: () => import(/* webpackChunkName: "commissionCard" */ '../components/CommissionCardSamples.vue'),
     props: true
   }
 ]
