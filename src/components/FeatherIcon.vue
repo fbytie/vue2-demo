@@ -3,6 +3,7 @@
     class="washed-yellow ma3 dib"
     v-html="iconSvg"
   />
+  <!--  TODO: Check real world vue2 > 7. global components for info on icons-->
 </template>
 
 <script>
